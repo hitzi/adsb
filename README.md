@@ -32,13 +32,13 @@ if($adsb->isValid())
     // you can test the message type
     if($adsb->isisAircraftVelocitiesMsg())
     {
-        echo "Aircraft Icao code : " . $adsb->getIcao(); ."\n"; // present in all messages
+        echo "Aircraft Icao code : " . $adsb->getIcao()."\n"; // present in all messages
         echo "Actual speed : " . $adsb->getSpeed()."\n";
         echo "Actual heading : " . $adsb->getHeading()."\n";
     }
     if($adsb->isAircraftIdentificationMsg())
     {
-        echo "Aircraft Icao code : " . $adsb->getIcao(); ."\n"; // present in all messages
+        echo "Aircraft Icao code : " . $adsb->getIcao()."\n"; // present in all messages
         echo "Actual flight number : " . $adsb->getIdent()."\n";         
     }
 }
